@@ -1,0 +1,108 @@
+/* Main Color */
+:root {
+    --main-color: #0161FF;
+    --secondary-color: #fff;
+    --accent-color: #B4D0E7;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* Generics */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+/* Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.btn.btn-S {
+    padding: 5px 10px; 
+}
+
+.btn.btn-primary {
+   color: #fff; 
+   background-color: var(--main-color);
+}
+
+/* Layout */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row > .col-30 {
+    flex-basis: 30%;
+}
+
+.col-30 > a, p {
+    margin-bottom: 25px;
+}
+
+.row > .col-70 {
+    flex-basis:70%;
+}
+
+/* Header */
+#header-navbar {
+    height: 70px;
+    z-index: 1;
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+}
+
+/* Hero */
+#hero {
+    height: 600px;
+    background-color: var(--accent-color);
+}
+
